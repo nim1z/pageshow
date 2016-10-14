@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function check() {
+                var a = document.getElementById("i0").value;
+                var b = document.getElementById("i1").value;
+                if (a == b) {
+                    document.getElementById("result").textContent ="ok"
+                }
+                else{
+                    document.getElementById("result").textContent ="miss"
+                }
+            }
+        </script>
+     </head>
+     <body>
+     <h2>数合わせ</h2>
+     数字１:<input id="i0" value="7" />
+     数字２:<input id="i1" value="10" />
+     <button onclick="check()">check</button>
+     <p id="result"></p>
+     </body>
+     </html>
