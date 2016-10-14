@@ -5,10 +5,10 @@
             function check() {
                 var a = document.getElementById("i0").value;
                 if (a <= 5) {
-                    document.getElementById("result").document.location = "page1.html";
+                    document.location = "page1.html";
                 }
                 else{
-                    document.getElementById("result").document.location = "http://www.google.com/";
+                    document.location = "http://www.google.com/";
                 }
             }
         </script>
@@ -17,6 +17,5 @@
      <h2>数合わせ</h2>
      数字１:<input id="i0" value="7" />
      <button onclick="check()">次へ</button>
-     <p id="result"></p>
      </body>
      </html>
