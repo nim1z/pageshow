@@ -1,15 +1,14 @@
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"><title>入れた数値によるページの推移</title>
         <script>
             function check() {
                 var a = document.getElementById("i0").value;
-                var b = document.getElementById("i1").value;
-                if (a == b) {
-                    document.getElementById("result").textContent ="ok"
+                if (a <= 5) {
+                    document.getElementById("result").document.location = "page1.html";
                 }
                 else{
-                    document.getElementById("result").textContent ="miss"
+                    document.getElementById("result").document.location = "http://www.google.com/";
                 }
             }
         </script>
@@ -17,8 +16,7 @@
      <body>
      <h2>数合わせ</h2>
      数字１:<input id="i0" value="7" />
-     数字２:<input id="i1" value="10" />
-     <button onclick="check()">check</button>
+     <button onclick="check()">次へ</button>
      <p id="result"></p>
      </body>
      </html>
