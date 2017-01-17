@@ -1,20 +1,25 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="content-type" content="text/html" charset="UTF-8" name="2016年度理数科課題研究・情報班">
+<meta http-equiv="content-type" content="text/html" charset="UTF-8" name="2016年度理数科課題研究・情報班">
 	<title>gamebook</title>
-	<style>
-		#wrapper {
-    		position: relative;
-    		width: 100%;
+	<script type="text/javascript">
+		window.onorientationchange = function () {
+		 switch ( window.orientation ) {
+		 case 0:
+		  alert('画面を横にしてください');
+		  break;
+		 case 180:
+		  alert('画面を横にしてください');
+		  break;
+		 }
 		}
-		#wrapper:before {
-    		content:"";
-    		display: block;
-    		padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
-		}
+</script>
+	<style>	
+	font-family:"Yu Gothic UI", "Meiryo UI", arial, sans-serif;
 	</style>
 		<!-- イラストとオーディオ(media.html) -->   
-			<div id="wrapper">
+			<div>
 			<iframe id="f1" name="media" src="media.html" height=65% width=60% style="position: absolute; left: 20%; top: 2.5%" ></iframe>
 		<!-- 本文(novel_**.html)--> 
 			<iframe id="f2" name="text" src="novel_01.html" height=25% width=60% style="position: absolute; left: 20%; bottom: 2.5%" ></iframe>
