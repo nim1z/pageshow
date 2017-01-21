@@ -1,25 +1,32 @@
 <!DOCTYPE HTML> 
 <html> 
 <head> 
-<meta charset="utf-8"> 
-<title>GameBook</title> 
+ <meta charset="utf-8"> 
+  <title>GameBook</title> 
 </head> 
 <body> 
-<h1>選択肢</h1> 
+ <h1>選択肢</h1> 
 
-<button type="submit" onClick="goN()" name="btn" value="1"><img src="b1k.png" alt="select1" /></button>
-<p class="selbtn"><input type="button" onClick="goR()" value="選択肢２"></p> 
-<p class="selbtn"><input type="button" onClick="gotoBack()" value="戻る"></p> 
+  <p><button type="submit" onClick="sl1()" name="btn" value="1"><img src="b1k.png" alt="select1" /></button></p>
+  <p><button type="submit" onClick="sl2()" name="btn" value="2"><img src="b2k.png" alt="select2" /></button></p>
+  <p><button type="submit" onClick="sl3()" name="btn" value="3"><img src="b3k.png" alt="select3" /></button></p>
 
  
 <script type="text/javascript"> 
-function goN() { 
+function sl1() { 
  document.location.href =　"gb02.html"; 
  } 
   
 
-< function goR() { 
+function sl2() { 
  	document.location.href ="gb03.html"　; 
- } /script> 
+ } 
+
+
+ function sl3() { 
+ 	document.location.href ="gb03.html"　; 
+ } 
+
+</script> 
 </body> 
 </html> 
