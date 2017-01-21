@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="UTF-8" name="2016年度理数科課題研究・情報班">
+	<title>gamebook</title>
+	<script>
+		window.onorientationchange = function () {
+		 switch ( window.orientation ) {
+		 case 0:
+		  alert('画面を横にしてください');
+		  break;
+		 case 180:
+		  alert('画面を横にしてください');
+		  break;
+		 }
+		}
+</script>
+	<style>	
+	font-family:"Yu Gothic UI", "Meiryo UI", arial, sans-serif;
+	</style>
+		<!-- イラストとオーディオ(media.html) -->   
+			<div>
+			<iframe id="f1" name="media" src="media/m00.html" height=65% width=60% style="position: absolute; left: 20%; top: 2.5%" ></iframe>
+		<!-- 本文(text_**.html)--> 
+			<iframe id="f2" name="text" src="text/t00.html" height=25% width=60% style="position: absolute; left: 20%; bottom: 2.5%" ></iframe>
+		<!-- メニュー(menu.html)--> 
+			<iframe id="f3" name="menu" src="menu.html" height=95% width=18% style="position: absolute; left: 0%; top: 2.5%" ></iframe>
+		<!-- 選択肢(select.html)--> 
+			<iframe id="f4" name="menu" src="select.html" height=95% width=18% style="position: absolute; right: 0%; top: 2.5%" ></iframe>
+			</div>
+</head>
+<body>
+</body>
+</html>
