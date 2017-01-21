@@ -3,15 +3,16 @@
 <head>
 <meta http-equiv="content-type" content="text/html" charset="UTF-8">
 	<script>
-		function slload() {
-			var a = window.localStorage.progress;
-		}
+	function pload() {
+	var st = localStorage.getItem('st');
+	alert(st);
+	}
 	</script>
 	<style>	
 	font-family:"Yu Gothic UI", "Meiryo UI", arial, sans-serif;
 	</style>
 </head>
 <body>
-	<center><p><button onclick=" slload() ">選択肢読み込み</button></p></center>
+	<center><p><button onclick=" pload() ">読み込み</button></p></center>
 </body>
 </html>
