@@ -3,33 +3,20 @@
 <head>
 <meta charset="utf-8">
 <script> 
-function s1() {
-		var key = 'select';
-		var val = document.getElementById("sel").value;
+function sel() {
+		var key = 'sel';
+		var val = document.getElementById("sb").value;
 		localStorage.setItem(key, val);
 	}
-
-function s2() {
-		var key = 'select';
-		var val = document.getElementById("sel").value;
-		localStorage.setItem(key, val);
-	}
-
-
- function s3() { 
-		var key = 'select';
-		var val = document.getElementById("sel").value;
-		localStorage.setItem(key, val);
- 	}
-</script> 
+</script>
 </head>
 <body>
 	<center>
 	<h1>選択肢</h1>
-	<p><button type="submit" onClick="s1()" name="btn" value="1"><img src="b1k.png" alt="select1" /></button></p>
-	<p><button type="submit" onClick="s2()" name="btn" value="2"><img src="b2k.png" alt="select2" /></button></p>
-	<p><button type="submit" onClick="s3()" name="btn" value="3"><img src="b3k.png" alt="select3" /></button></p>
+	<p><button id="sb" type="submit" onClick="sel()" value="1"><img src="b1k.png" alt="select1" /></button></p>
+	<p><button id="sb" type="submit" onClick="sel()" value="2"><img src="b2k.png" alt="select2" /></button></p>
+	<p><button id="sb" type="submit" onClick="sel()" value="3"><img src="b3k.png" alt="select3" /></button></p>
+	<p><button type="submit" onClick="next()"">次へ</button></p>
 	</center>
-
 </body> 
 </html> 
