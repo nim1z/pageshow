@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8"><title>分岐部分</title>
+        <script>
+	// 数値保存
+	function sSave() {
+		var val = document.getElementById("sb").value;
+	    localStorage.sel= val;
+	}
+	// 数値読み込み
+	function sRead() {
+	var s = localStorage.sel;
+	alert(s);
+	}
+        </script>
+     </head>
+    <body>
+	<h2>選択肢チェック</h2>
+		<p>ボックスA<input id="sb" value="7"/></p>
+		<p><button onclick="sSave()">進む</button></p>
+		<p><button onclick="sRead() ">保存値読み込み</button></p>
+    </body>
+</html>
