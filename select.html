@@ -2,16 +2,12 @@
 <html> 
 <head> 
  <meta charset="utf-8"> 
-  <title>GameBook</title> 
 </head> 
 <body> 
- <h1>選択肢</h1> 
-
+ <center><h1>選択肢</h1></center> 
   <p><button type="submit" onClick="sl1()" name="btn" value="1"><img src="b1k.png" alt="select1" /></button></p>
   <p><button type="submit" onClick="sl2()" name="btn" value="2"><img src="b2k.png" alt="select2" /></button></p>
-  <p><button type="submit" onClick="sl3()" name="btn" value="3"><img src="b3k.png" alt="select3" /></button></p>
-
- 
+  <p><button type="submit" onClick="sl3()" name="btn" value="3"><img src="b3k.png" alt="select3" /></button></p> 
 <script type="text/javascript"> 
 function sl1() {
 		var key = 'select';
@@ -32,7 +28,6 @@ function sl2() {
 		var val = document.getElementById("c").value;
 	    localStorage.setItem(key, val);
 	}
-
 </script> 
 </body> 
 </html> 
