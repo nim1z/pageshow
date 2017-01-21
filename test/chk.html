@@ -5,11 +5,11 @@
 	// 数値保存
 	function sSave() {
 		var val = document.getElementById("sb").value;
-	    localStorage.sel= val;
+	    sessionStorage.sel= val;
 	}
 	// 数値読み込み
 	function sRead() {
-	var s = localStorage.sel;
+	var s = sessionStorage.sel;
 	alert(s);
 	}
         </script>
