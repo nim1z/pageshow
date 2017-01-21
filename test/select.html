@@ -2,21 +2,21 @@
 <html>
 <head>
 <meta charset="utf-8">
-</head>
-<body>
-	<center>
-	<h1>選択肢</h1>
-	<p><button id="sb" value="1" onClick="sel()"><img src="b1k.png" alt="select1" /></button></p>
-	<p><button id="sb" value="2" onClick="sel()"><img src="b2k.png" alt="select2" /></button></p>
-	<p><button id="sb" value="3" onnClick="sel()"><img src="b3k.png" alt="select3" /></button></p>
-	<p><button type="submit" onClick="next()">次へ</button></p>
-	</center>
-<script> 
+	<script> 
 	function sel() {
 		var val = document.getElementById("sb").value;
 		localStorage.sel = val;
 		}
 	}
-</script>
+	</script>
+</head>
+<body>
+	<center>
+	<h1>選択肢</h1>
+	<p><button id="sb" name="sb1" value="1" onClick="sel()"><img src="b1k.png" alt="select1" /></button></p>
+	<p><button id="sb" name="sb2" value="2" onClick="sel()"><img src="b2k.png" alt="select2" /></button></p>
+	<p><button id="sb" name="sb3" value="3" onnClick="sel()"><img src="b3k.png" alt="select3" /></button></p>
+	<p><button type="submit" onClick="next()">次へ</button></p>
+	</center>
 </body> 
 </html> 
