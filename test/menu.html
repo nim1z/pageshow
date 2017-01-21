@@ -3,8 +3,9 @@
 <head>
 <meta http-equiv="content-type" content="text/html" charset="UTF-8">
 	<script>
-		function pload() {
-			var a = window.localStorage.progress;
+		function selload() {
+			var sl = window.localStorage.sel;
+		alert(sl);
 		}
 	</script>
 	<style>	
@@ -12,5 +13,6 @@
 	</style>
 </head>
 <body>
+<p><button type="submit" onClick="selload()">選択肢確認</button></p>
 </body>
 </html>
