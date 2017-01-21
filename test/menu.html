@@ -3,9 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html" charset="UTF-8">
 	<script>
-	function selload() {
-	var name = localStorage.getItem('sel');
-	alert(name);
+	function sload() {
+	var s = localStorage.sel;
+	alert(s);
+		}
 	}
 	</script>
 	<style>	
@@ -13,6 +14,6 @@
 	</style>
 </head>
 <body>
-<p><button type="submit" onClick="selload()">選択肢確認</button></p>
+<p><button onClick="sload()">選択肢確認</button></p>
 </body>
 </html>
