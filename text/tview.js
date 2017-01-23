@@ -1,6 +1,6 @@
 <!--
 	var count=0;
-	function reload(){
+	window.onload = function (){
 		count++;
 		//要素ノードオブジェクト
 		var novel=document.getElementById('novel');
