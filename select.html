@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>選択肢</title>
+<link rel="stylesheet" type="text/css" href="select.css">
 <script type="text/javascript">
 <!--
 var charchecknum = 1;   					//許容文字数
@@ -70,9 +71,9 @@ function check(){
 <form name="SelectFrom">
  現在選択されている番号<br>
  <input id="i0" type="text" name="select" onkeydown="CharCheck();enter()" onkeyup="CharCheck()"><br>
- <button type="button" value="1" onClick="addTF(this.value);CharCheck();"><alt="1" /></button><br>
- <button type="button" value="2" onClick="addTF(this.value);CharCheck();"><alt="2" /></button><br>
- <button type="button" value="3" onClick="addTF(this.value);CharCheck();"><alt="3" /></button><br>
+ <button type="button" value="1" onClick="addTF(this.value);CharCheck();"><img src="b1k.png" alt="1" /></button><br>
+ <button type="button" value="2" onClick="addTF(this.value);CharCheck();"><img src="b2k.png" alt="2" /></button><br>
+ <button type="button" value="3" onClick="addTF(this.value);CharCheck();"><img src="b3k.png" alt="3" /></button><br>
  <br>
  <button type="button" value="やり直し" onClick="clr()"><img src="meida/clrk.png" alt="clear"/></button><br>
 </form>
