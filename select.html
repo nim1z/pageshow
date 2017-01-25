@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>選択肢</title>
+<link rel="stylesheet" type="text/css" href="button.css">
 <script type="text/javascript">
 <!--
 var charchecknum = 1;   					//許容文字数
@@ -61,6 +62,7 @@ function check(){
 		var s = document.getElementById("i0").value;
 	    sessionStorage.sel= s;
 	}
+
 // --></script>
 </head>
 <body>
@@ -69,9 +71,9 @@ function check(){
 <form name="SelectFrom">
  現在選択されている番号<br>
  <input id="i0" type="text" name="select" onkeydown="CharCheck();enter()" onkeyup="CharCheck()"><br>
- <button type="button" value="1" onClick="addTF(this.value);CharCheck();"><img src="media/b1k.png" alt="select1" /></button><br>
- <button type="button" value="2" onClick="addTF(this.value);CharCheck();"><img src="media/b2k.png" alt="select2" /></button><br>
- <button type="button" value="3" onClick="addTF(this.value);CharCheck();"><img src="media/b3k.png" alt="select3" /></button><br>
+ <button type="button" value="1" onClick="addTF(this.value);CharCheck();"><alt="1" /></button><br>
+ <button type="button" value="2" onClick="addTF(this.value);CharCheck();"><alt="2" /></button><br>
+ <button type="button" value="3" onClick="addTF(this.value);CharCheck();"><alt="3" /></button><br>
  <br>
  <button type="button" value="やり直し" onClick="clr()"><img src="meida/clrk.png" alt="clear"/></button><br>
 </form>
