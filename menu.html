@@ -8,10 +8,12 @@
 		var m = parent.media.location;
 	localStorage.tprg= t;
 	localStorage.mprg= m;
+	alert("セーブしました");
 	}
 	function pload() {
 	var t = localStorage.tprg;
 	var m = localStorage.mprg;
+	alert("ロードしました");
 	parent.text.location.href = t;
 	parent.media.location.href= m;
 	}
