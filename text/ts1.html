@@ -2,27 +2,39 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html" charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="button.css">
-	<script>
-		// 分岐先指定(tはテキスト,mはメディアを表す.後ろの数値は選択した値.) ;
-		var t1= "https://mps2016js.github.io/text/t00";
-		var m1= "https://mps2016js.github.io/media/m00";
-		
-		var t2= "https://mps2016js.github.io/text/t01";
-		var m2= "https://mps2016js.github.io/media/m01";
-		
-		var t3= "https://mps2016js.github.io/text/t02";
-		var m3= "https://mps2016js.github.io/menu.html";
-		
-		var text= '分岐用テキスト';
-	</script>
+	<title>novel_01</title>
+	 <link rel="stylesheet" type="text/css" href="button.css">
 	<script src="tview.js"></script>
 	<script src="branch.js"></script>
+	<script>
+		var text= '分岐用テキスト'
+		window.onload = "reload()"
+		onload2 = function(){
+			parent.media.location.href= "https://mps2016js.github.io/select.html";
+		}
+		addOnloadEvent(onload2);
+		function addOnloadEvent(fnc){  
+		  if ( typeof window.addEventListener != "undefined" )  
+			window.addEventListener( "load", fnc, false );  
+ 		else if ( typeof window.attachEvent != "undefined" ) {  
+			window.attachEvent( "onload", fnc );  
+			  }
+		}
+		// 分岐先指定(tはテキスト,mはメディアを表す.後ろの数値は選択した値.) ;
+		var t1= "https://mps2016js.github.io/text/";
+		var m1= "https://mps2016js.github.io/media/";
+		
+		var t2= "https://mps2016js.github.io/text/";
+		var m2= "https://mps2016js.github.io/media/";
+		
+		var t3= "https://mps2016js.github.io/text/";
+		var m3= "https://mps2016js.github.io/media/";
+	</script>
 </head>
-<body onload="reload()">
+	<body>
 		<form>
 		<p id="novel"></p><br>
 		<div align="right"><a class="button" onclick="branch()">次へ ＞</a></div>
 		</form>
-</body>
+	</body>
 </html>
