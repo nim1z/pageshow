@@ -2,33 +2,32 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html" charset="UTF-8">
-	<title>novel_01</title>
-	 <link rel="stylesheet" type="text/css" href="button.css">
+	<link rel="stylesheet" type="text/css" href="button.css">
 	<script>
-		function sjump(){
-			parent.media.location.href= "https://mps2016js.github.io/media/";
+		window.onload = function (){
+			parent.media.location.href= "https://mps2016js.github.io/meida/b1k.png";
 			parent.select.location.href= "https://mps2016js.github.io/select.html";
-		}
+		};
 		// 分岐先指定(tはテキスト,mはメディアを表す.後ろの数値は選択した値.) ;
-		var t1= "https://mps2016js.github.io/text/";
-		var m1= "https://mps2016js.github.io/media/";
+		var t1= "https://mps2016js.github.io/text/t00";
+		var m1= "https://mps2016js.github.io/media/m00";
 		
-		var t2= "https://mps2016js.github.io/text/";
-		var m2= "https://mps2016js.github.io/media/";
+		var t2= "https://mps2016js.github.io/text/t01";
+		var m2= "https://mps2016js.github.io/media/m01";
 		
-		var t3= "https://mps2016js.github.io/text/";
-		var m3= "https://mps2016js.github.io/media/";
+		var t3= "https://mps2016js.github.io/text/t02";
+		var m3= "https://mps2016js.github.io/menu.html";
 		
-		var text= '分岐用テキスト'
+		var text= '分岐用テキスト';
 	</script>
 	<script src="tview.js"></script>
 	<script src="branch.js"></script>
 </head>
-	<body onload="reload()">
-	<body onload="sjump()">
+<body>
+<body onload="reload()">
 		<form>
 		<p id="novel"></p><br>
 		<div align="right"><a class="button" onclick="branch()">次へ ＞</a></div>
 		</form>
-	</body>
+</body>
 </html>
