@@ -1,5 +1,5 @@
 function branch(){
-	parent.select.location.href= "https://mps2016js.github.io/dummy";
+	parent.select.location.href= "https://mps2016js.github.io/dummy.html";
 	var s = sessionStorage.sel;
 	if (s = 1){
 		parent.text.location.href= t1;
@@ -14,6 +14,6 @@ function branch(){
 		parent.media.location.href= m3;
 		}
 	else{
-		alert('1`3‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢')
+		alert('1ï½3ã‚’é¸ã³ãªãŠã›')
 		}
 	}
