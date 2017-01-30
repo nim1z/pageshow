@@ -62,6 +62,12 @@ function check(){
 		var s = document.getElementById("i0").value;
 	    sessionStorage.sel= s;
 	}
+	//確認アラート
+    function disp(){
+
+	    window.alert(''+SelectFrom.select.value+'が確定されました。');
+
+    }
 
 // --></script>
 </head>
@@ -77,7 +83,7 @@ function check(){
  <br>
  <button type="button" class="button" value="やり直し" onClick="clr()">clear</button><br>
 </form>
-<p><button class="button" onClick="selsv();check();"  name="selfin" value="確定">確定</button></p>
+<p><button class="button" onClick="selsv();check();disp();"  name="selfin" value="確定">確定</button></p>
 </center>
 </body>
 </html>
