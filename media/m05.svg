@@ -8,14 +8,16 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3015"
    version="1.1"
-   width="210mm"
-   height="297mm"
-   id="svg2">
-  <defs
-     id="defs4" />
+   inkscape:version="0.48.5 r10040"
+   width="640"
+   height="480"
+   sodipodi:docname="mura640.png">
   <metadata
-     id="metadata7">
+     id="metadata3021">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,10 +28,32 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     id="layer1">
-    <image
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAIAAAC6s0uzAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
+  <defs
+     id="defs3019" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     id="namedview3017"
+     showgrid="false"
+     inkscape:zoom="1.53125"
+     inkscape:cx="320"
+     inkscape:cy="31.020408"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3015" />
+  <image
+     width="640"
+     height="480"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAIAAAC6s0uzAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
 nDy8SbMsW5Ye9K1m7+3u0Zxz77uvyaqsJrOEALNCDQOswDSiJDGRSaYxExgwhx8AA/4Gxl9gBhMY
 wIDOMJNhQiaTSVAyVWUq8+V7tzknItx9N2stBn6yYhCDE3HcfbvvvdbX7aD/5n/oLy+f59NyOi+9
 12nKrPzDD785n88pJVUlIhHkDABjIBzucbvdHo/H9Xr9yU9Oynh9RQRut0et9Xw+n+e8rs3Mru/m
@@ -9414,13 +9438,14 @@ WVYNYV3XdV1fG99rO4vc3R8vl4tqxVfHBIA68iiSt72f/N39m3lbvz59/nJ+jtOQDapK13V9H7sh
 HsZ+f5nX8+oEc9UpdL96//G3H74PQLgXh1Rzsdf4MHYudHGTompdDIioq+21jOPw7uOHTPr1p385
 PZy+/ng+Xy4F6jhNL+t5lzQchv8XzMuGx+HsvDgAAAAASUVORK5CYII=
 "
-       x="39.285713"
-       y="207.50504"
-       width="640"
-       height="480"
-       id="image2993" />
-    <image
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAEgCAYAAAB8cCy4AAAABHNCSVQICAgIfAhkiAAAIABJREFU
+     id="image3023"
+     x="0"
+     y="0" />
+  <image
+     y="193.63264"
+     x="387.10202"
+     id="image3033"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARAAAAEgCAYAAAB8cCy4AAAABHNCSVQICAgIfAhkiAAAIABJREFU
 eJzsvXmMbcl93/epqnPOXbtvL6/77eu8ZWbemxmOOCSHy3AkiqK4idoSLU4E2/ImOIoBG7FjO4bl
 OFYCRH84cozYQBAgCZwYRiBZEiTYgqxYoiibIkVyuMz+OG/evvR693uWqsofVWe53T2kKNMROO98
 Gxf39rlnrVv1rd9eUKNGjRo1atSoUaNGjRo1atSoUaNGjRo1atSoUaNGjRo1atSoUaNGjRo1atSo
@@ -10553,10 +10578,6 @@ DB5e/4B9x09m7RJxzfKVjb1Uk2NCxNyJNEBFqF6H7voyvdYq/W4zXpKgJ5Ta2JS22sX6LBB43RZu
 r43XWSHw+xu7GL34L4qCgb1JCtKIZ/+9C3z7X/wWhxv/Po4zit/zcXseUpixQxqEfkTf620VAfpj
 Rf8f3dFhog28zJgAAAAASUVORK5CYII=
 "
-       x="400"
-       y="399.36218"
-       width="272"
-       height="288"
-       id="image3004" />
-  </g>
+     height="288"
+     width="272" />
 </svg>
