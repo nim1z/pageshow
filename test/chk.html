@@ -7,7 +7,12 @@
 		var val = document.getElementById("sb").value;
 	    sessionStorage.sel= val;
 	}
-	// 数値読み込み
+	// 数値確認
+		function sload() {
+	var s = sessionStorage.sel;
+	alert(s);
+	}
+	// セーブ状況の確認
 	function sRead() {
 	var s = sessionStorage.sel;
 	alert(s);
@@ -23,7 +28,8 @@
     <body>
 	<h2>選択肢チェック</h2>
 		<p>選択肢に入れる数値を入力<input id="sb" value="7"/></p>
-		<p><button onclick="sSave()">保存</button></p>
-		<p><button onclick="pload() ">保存値読み込み</button></p>
+		<p><button onclick="sSave()">数値を保存</button></p>
+	    <p><button onclick="sload()">数値を確認</button></p>
+		<p><button onclick="pload() ">セーブ状況の確認</button></p>
     </body>
 </html>
