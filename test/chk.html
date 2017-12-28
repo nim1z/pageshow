@@ -13,15 +13,17 @@
 	alert(s);
 	}
 	// セーブ状況の確認
-	function sRead() {
-	var s = sessionStorage.sel;
-	alert(s);
-	}
 	function pload() {
 	var t = localStorage.tprg;
 	var m = localStorage.mprg;
 	alert(t);
 	alert(m);
+	}
+	// ロード時に分岐チェック用ページを開く
+	function brancheck(){
+		var t = https://mps2016js.github.io/text/tbs;
+	localStorage.tprg= t;
+	alert("以降のロードで本文エリアが/text/tbsになります)");
 	}
         </script>
      </head>
@@ -31,5 +33,6 @@
 		<p><button onclick="sSave()">数値を保存</button></p>
 	    <p><button onclick="sload()">数値を確認</button></p>
 		<p><button onclick="pload() ">セーブ状況の確認(本文→メディアの順)</button></p>
+	    <p><button onclick="brancheck() ">ロード時に分岐チェック用ページを開く(本文エリア)</button></p>
     </body>
 </html>
