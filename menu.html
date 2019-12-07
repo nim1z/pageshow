@@ -4,19 +4,19 @@
 <link rel="stylesheet" type="text/css" href="menu.css">
 <meta http-equiv="content-type" content="text/html" charset="UTF-8">
 	<script>
-	function psave(){
-		var t = parent.text.location;
-		var m = parent.media.location;
-	localStorage.tprg= t;
-	localStorage.mprg= m;
+	function SaveState(){
+		var TextState = parent.text.location;
+		var MediaState = parent.media.location;
+	localStorage.TextState= TextState;
+	localStorage.MediaState= MediaState;
 	alert("セーブしました");
 	}
-	function pload() {
-	var t = localStorage.tprg;
-	var m = localStorage.mprg;
+	function LoadState() {
+	var TextState = localStorage.TextState;
+	var MediaState = localStorage.MediaState;
 	alert("ロードしました");
-	parent.text.location.href = t;
-	parent.media.location.href= m;
+	parent.text.location.href = TextState;
+	parent.media.location.href= MediaState;
 	}
 	</script>
 	<style>	
@@ -25,7 +25,7 @@
 </head>
 <body>
 	<p><b>メインメニュー</b></p>
-<p><button type="button" class="button" onclick="psave()">セーブ</button></p>
-<p><button type="button" class="button" onclick="pload()">ロード</button></p>
+<p><button type="button" class="button" onclick="SaveState()">セーブ</button></p>
+<p><button type="button" class="button" onclick="LoadState()">ロード</button></p>
 </body>
 </html>
