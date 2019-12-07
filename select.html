@@ -37,7 +37,8 @@
 
 	// 数値保存
 	function SaveSelectValue()
-	    sessionStorage.sel= document.getElementById("i0");
+            var SelectValue = document.getElementById("i0").value
+	    sessionStorage.SelectValue = SelectValue ;
 	}
 	//確認アラート
 	    function disp(){
