@@ -1,6 +1,6 @@
 function branch(){
 	parent.select.location.href= "../dummy.html";
-	var s = sessionStorage.sel;
+	var s = sessionStorage.SelectValue;
 	if (s == "1"){
 		parent.text.location.href= t1;
 		parent.media.location.href= m1;
