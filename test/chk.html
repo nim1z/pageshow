@@ -3,37 +3,36 @@
         <meta charset="UTF-8"><title>分岐部分</title>
         <script>
 	// 数値保存
-	function sSave() {
-		var val = document.getElementById("sb").value;
-	    sessionStorage.sel= val;
+	function SaveSelectValue() {
+		var SelectValue = document.getElementById("SelectValueBox").value;
+	    sessionStorage.SelectValue= SelectValue;
 	}
 	// 数値確認
-		function sload() {
-	var s = sessionStorage.sel;
-	alert(s);
+		function ViewSelectValue() {
+	var SelectValue = sessionStorage.SelectValue;
+	alert(SelectValue);
 	}
 	// セーブ状況の確認
-	function pload() {
-	var t = localStorage.tprg;
-	var m = localStorage.mprg;
-	alert(t);
-	alert(m);
+	function ViewState() {
+	var TextState = localStorage.TextState;
+	var MediaState = localStorage.MediaState;
+	alert(TextState);
+	alert(MediaState);
 	}
 	// ロード時に分岐チェック用ページを開く
 	function brancheck(){
-		var t = "https://nim1z.github.io/pageshow/text/tbs";
-	localStorage.tprg= t;
-	alert("以降のロードでts3・ms3まで飛びます");
+	localStorage.TextState= "https://nim1z.github.io/pageshow/text/tbs";
+	alert("以降のロードでtbsまで飛びます");
 	}
         </script>
      </head>
     <body>
 	<h2>localStorage動作チェック</h2>
-		<p>選択肢に入れる数値を入力<input id="sb" value="7"/></p>
-		<p><button onclick="sSave()">数値を保存</button></p>
-	    <p><button onclick="sload()">数値を確認</button></p>
-		<p><button onclick="pload()">セーブ状況の確認(本文→メディアの順)</button></p>
-	    <p><button onclick="brancheck()">ロード時にts3・ms3を開く(分岐チェック用)</button></p>
-	    <p><a href="../></a>ゲームトップへ戻る</p>
+		<p>選択肢に入れる数値を入力<input id="SelectValueBox"/></p>
+		<p><button onclick="SaveSelectValue()">数値を保存</button></p>
+	    <p><button onclick="ViewSelectValue()">数値を確認</button></p>
+		<p><button onclick="ViewState()">セーブ状況の確認(本文→メディアの順)</button></p>
+	    <p><button onclick="brancheck()">ロード時にtbsを開く(分岐チェック用)</button></p>
+	    <p><a href="../>ゲームトップに戻る</a></p>
     </body>
 </html>
