@@ -28,21 +28,20 @@
 	}
 	//ボタンでの入力
 	function addTF(str){
-		document.SelectForm.select.value += str;
+		document.SelectForm.SelectValueBox.value += str;
 	}
 	//テキストボックス内を消去する
-	function clr(){
-	  this.SelectForm.select.value="";
+	function ClearBox(){
+	  this.SelectForm.SelectValueBox.value="";
 	}
 
 	// 数値保存
-	function selsv(){
-		var s = document.getElementById("i0").value;
-	    sessionStorage.sel= s;
+	function SaveSelectValue()
+	    sessionStorage.sel= document.getElementById("i0").value;
 	}
 	//確認アラート
 	    function disp(){
-	    window.alert(''+SelectForm.select.value+'が確定されました。');
+	    window.alert(''+SelectForm.SelectValueBox.value+'が確定されました。');
     }
 // --></script>
 </head>
@@ -51,12 +50,12 @@
 <h1>選択肢</h1> 
 <form id="SelectForm" name="SelectForm">
  選択中の番号<br>
- <input id="i0" type="number" name="select" maxlength='1' pattern='[1-3]{1}' min="1" max="3" placeholder="1,2,3から選んで入力" onfocus="digit(this)" onblur="clearInterval(timerId)" required><br>
+ <input id="i0" type="number" name="SelectValueBox" maxlength='1' pattern='[1-3]{1}' min="1" max="3" placeholder="1,2,3から選んで入力" onfocus="digit(this)" onblur="clearInterval(timerId)" required><br>
  <button type="button" class="button" value="1" onClick="addTF(this.value);">1</button><br>
  <button type="button" class="button" value="2" onClick="addTF(this.value);">2</button><br>
  <button type="button" class="button" value="3" onClick="addTF(this.value);">3</button><br>
- <p><button type="button" class="button" onClick="clr()">選びなおす</button></p>
- <p><button type="submit" class="button" onClick="selsv();">確定</button></p>
+ <p><button type="button" class="button" onClick="ClearBox()">選びなおす</button></p>
+ <p><button type="submit" class="button" onClick="SaveSelectValue();">確定</button></p>
 </form>
 </center>
 </body>
