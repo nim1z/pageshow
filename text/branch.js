@@ -1,5 +1,5 @@
 function branch(){
-	parent.select.location.href= "https://mps2016js.github.io/dummy.html";
+	parent.select.location.href= "../dummy.html";
 	var s = sessionStorage.sel;
 	if (s == "1"){
 		parent.text.location.href= t1;
