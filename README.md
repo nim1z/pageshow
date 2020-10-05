@@ -1,2 +1,2 @@
 # pageshow
-web picture-and-text-story show
+A web-based program that displays images and text (like "Adventure Games (ADV)")
