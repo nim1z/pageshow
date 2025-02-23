@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="menu.css">
 <meta http-equiv="content-type" content="text/html" charset="UTF-8">
-	<script>
-	function SaveState(){
-		var TextState = parent.text.location;
-		var MediaState = parent.media.location;
-	localStorage.TextState= TextState;
-	localStorage.MediaState= MediaState;
-	alert("セーブしました");
+	<style>
+	body{
+	font-family: arial, sans-serif;
 	}
-	function LoadState() {
-	var TextState = localStorage.TextState;
-	var MediaState = localStorage.MediaState;
-	alert("ロードしました");
-	parent.text.location.href = TextState;
-	parent.media.location.href= MediaState;
+	.menu{
+		display: -webkit-flex;
+		display: flex;
 	}
-	</script>
-	<style>	
-	font-family:"Yu Gothic UI", "Meiryo UI", arial, sans-serif;
 	</style>
 </head>
 <body>
-	<p><b>メインメニュー</b></p>
-<p><button type="button" class="button" onclick="SaveState()">セーブ</button></p>
-<p><button type="button" class="button" onclick="LoadState()">ロード</button></p>
+<div class="menu">
+	<div class="menuitem"><button type="button" class="button" onclick="LoadPointStatus()">ポイント更新</button></div>
+	<div class="menuitem"><button type="button" class="button" onclick="SwitchContents()">トップに戻る</button></div>
+	<div class="menuitem"><div id="PointStatus"></div></div>
+</div>
+<div class="LICENSE"><p><a href="/LICENSE.txt">LICENSE</a></p></div>
+	<script src="pointrally.js"></script>
+	<script>
+	var NextMedia = "title";
+	/* ポイント更新（読み込み） */
+	window.onload = LoadPointStatus();
+	/* コンテンツ読み込み */
+	window.onload = LoadContents();
+	</script>
 </body>
 </html>

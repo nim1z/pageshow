@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+	<style>
+	body{
+	font-family: "BIZ UDPGothic","Yu Gothic UI", "Meiryo UI", arial, sans-serif;
+	}
+	</style>
+	<script src="../pointrally.js"></script>
+	<script type="text/javascript">
+	var TagMedia = document.location.pathname.split('/').pop().split('.').shift();
+	var TagNumber = "Read_" + document.location.pathname.split('/').pop().split('.').shift();
+	var Quiz = 0;
+	window.onload = ScannedTag();
+	</script>
+</head>
+<body>
+	<p><b><h2>読み取りました ポイントを追加しました</h2></b></p>
+	<!-- <p><button type="button" class="button" onclick="JumpAdditionPoint()">ポイントを追加</button></p> -->
+</body>
+</html>
