@@ -1,1 +1,8 @@
 media/
+*.zip
+*.7z
+*.docx
+*.pptx
+*.xlsx
+docs/
+*.min.js

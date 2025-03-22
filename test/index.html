@@ -1,30 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html" charset="UTF-8" name="2016年度理数科課題研究・情報班">
-	<title>gamebook</title>
-	<script>
-		window.onorientationchange = function () {
-		 switch ( window.orientation ) {
-		 case 0:
-		  alert('画面を横にしてください');
-		  break;
-		 case 180:
-		  alert('画面を横にしてください');
-		  break;
-		 }
-		}
-</script>
-	<style>	
-	font-family:"Yu Gothic UI", "Meiryo UI", arial, sans-serif;
-	</style>
-		<!-- イラストとオーディオ(media.html) -->   
-			<div>
-			<iframe id="f1" name="media" src=chk.html height=100% width=80% style="position: absolute; left: 0%; top: 2.5%" ></iframe>
-		<!-- 選択肢(select.html)--> 
-			<iframe id="f4" name="menu" src=../select.html height=100% width=20% style="position: absolute; right: 0%; top: 2.5%" ></iframe>
-			</div>
-</head>
-<body>
-</body>
+<!doctype html>
+    <head>
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8"">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="../pointrally.js"></script>
+    <script>
+	// セーブ状況の確認
+	function ViewState() {
+	var MediaState = localStorage.MediaState;
+	alert(MediaState);
+	}
+	//タグ読み取り状況の確認
+	function TagCheck(){
+		var Point = localStorage.Point;
+		var tag01 = localStorage.tag01;
+		var tag02 = localStorage.tag02;
+		alert("ポイント");
+		alert(Point);
+		alert("tag01を読み取ったとき=1");
+		alert(tag01);
+		alert("tag02を読み取った時=1");
+		alert(tag02);
+	}
+    </script>
+     </head>
+    <body>
+	<h2>動作チェック</h2>
+           <p><a href="../" target="_top">トップに戻る</a></p>
+		<p><button onclick="ViewState()">セーブ状況の確認</button></p>
+	    <p><button onclick="TagCheck()">タグ読み取り状況の確認</button></p>
+		<p><button onclick="ResetAllStatus()">タグ読み取り状況のクリア</button></p>
+    </body>
 </html>

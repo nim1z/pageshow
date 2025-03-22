@@ -1,0 +1,10 @@
+#AccessControl Extension
+<Files ~ "^(\.)">
+deny from all
+</Files>
+<Files ~ "(\.gitignore)">
+deny from all
+</Files>
+<Files ~ "(\.zip)$">
+deny from all
+</Files>

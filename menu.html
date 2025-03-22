@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 	<style>
 	body{
 	font-family: arial, sans-serif;
@@ -9,6 +10,14 @@
 	.menu{
 		display: -webkit-flex;
 		display: flex;
+		justify-content: center;
+	}
+	.menuitem{
+		width: 5em;
+		height: 2em;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-bottom: 1em;
 	}
 	</style>
 </head>
@@ -16,9 +25,8 @@
 <div class="menu">
 	<div class="menuitem"><button type="button" class="button" onclick="LoadPointStatus()">ポイント更新</button></div>
 	<div class="menuitem"><button type="button" class="button" onclick="SwitchContents()">トップに戻る</button></div>
-	<div class="menuitem"><div id="PointStatus"></div></div>
 </div>
-<div class="LICENSE"><p><a href="/LICENSE.txt">LICENSE</a></p></div>
+	<div class="Point"><div style="text-align: center;font-size: x-large;" id="PointStatus"></div></div>
 	<script src="pointrally.js"></script>
 	<script>
 	var NextMedia = "title";
