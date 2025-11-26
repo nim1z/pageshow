@@ -1,4 +1,4 @@
-/media/
+media/*
 *.zip
 *.7z
 *.min.js
